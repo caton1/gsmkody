@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <article>
+            <form enctype="multipart/form-data" action="index.php" method="POST"> 
+                <input type="text" name="username" placeholder="Usee name">
+                <input type="text" name="apiaccesskey" placeholder="Api key">
+                     <select name="action">
+                    <option value="accountinfo">accountinfo</option>
+                    <option value="imeiservicelist">imeiservicelist</option>
+                   <!-- <option value="modellist">modellist</option>-->
+                   <!-- <option value="product">getProduct</option>-->
+                      <option value="placeimeiorder">placeimeiorder</option>
+                      <option value="getimeiorder">getimeiorder</option>
+                       <!--<option value="meplist">meplist</option>-->
+                       <!--<option value="providerlist">providerlist</option>-->
+                </select>
+                <select name="requestformat">
+                <option value="xml">XML</option>
+                <option value="json">JSON</option>
+                </select>
+                <input type="text" name="imei" placeholder="imei">
+                <input type="text" name="produktid" placeholder="produkt id">
+                <input type="text" name="modelid" placeholder="model id">
+                <input type="file" name="parameters">
+                <input type="submit" value="Zaloguj się">
+            </form>
+
+        </article>
+    </body>
+</html>
